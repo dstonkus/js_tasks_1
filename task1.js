@@ -6,11 +6,10 @@
 //number([1, 2, 3, 4, 5])        => 3
 
 const arrayAverage = (numbersArr) => {
-  let sum = 0;
-
-  numbersArr.map((n) => (sum += n));
-
-  return Math.round(sum / numbersArr.length);
+  return Math.round(
+    numbersArr.reduce((prevValue, currValue) => prevValue + currValue) /
+      numbersArr.length
+  );
 };
 
 console.log(arrayAverage([1, 2]));
