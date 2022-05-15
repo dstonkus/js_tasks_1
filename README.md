@@ -5,8 +5,9 @@
 1. Clone repo
 2. cd 'folder_name'
 3. yarn install
-4. cd build
-5. node index.js
+4. yarn tsc -p ./tsconfig.json
+5. cd build
+6. node index.js
 
 # Results
 
