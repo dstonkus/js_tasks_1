@@ -1,6 +1,4 @@
-import fs = require('fs');
-
-const chainReduction = (str: string): string => {
+export const chainReduction = (str: string): string => {
   let myString = str;
   let secondI = 0;
   let run = true;
@@ -23,14 +21,3 @@ const chainReduction = (str: string): string => {
   }
   return myString;
 };
-
-fs.readFile('../input.txt', 'utf8', (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  console.log(chainReduction(data).length);
-
-  // result
-  // 9160
-});

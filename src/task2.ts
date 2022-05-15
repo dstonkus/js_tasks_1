@@ -1,4 +1,4 @@
-const checkSameLetters = (
+export const checkSameLetters = (
   str: string,
   inputOne: string,
   inputTwo: string
@@ -16,16 +16,3 @@ const checkSameLetters = (
   if (countOne === countTwo) return true;
   else return false;
 };
-
-console.log(checkSameLetters('ddkk', 'd', 'k'));
-console.log(checkSameLetters('dkkdd', 'd', 'k'));
-console.log(checkSameLetters('ddkKm', 'd', 'k'));
-console.log(checkSameLetters('dmm', 'd', 'k'));
-console.log(checkSameLetters('eSss', 'd', 'k'));
-
-// result
-// true
-// false
-// true
-// false
-// true

@@ -1,4 +1,4 @@
-const calculateNums = (...nums: number[]): number => {
+export const calculateNums = (...nums: number[]): number => {
   let sum = 0;
 
   nums.map((n) => {
@@ -7,8 +7,3 @@ const calculateNums = (...nums: number[]): number => {
 
   return Math.trunc(Math.sqrt(sum) / 2);
 };
-
-console.log(calculateNums(65, 60, 75, 55, 60, 63, 64, 45));
-
-// result
-// 86

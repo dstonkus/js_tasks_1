@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var fs = require("fs");
+exports.chainReduction = void 0;
 var chainReduction = function (str) {
     var myString = str;
     var secondI = 0;
@@ -24,12 +24,4 @@ var chainReduction = function (str) {
     }
     return myString;
 };
-fs.readFile('../input.txt', 'utf8', function (err, data) {
-    if (err) {
-        console.error(err);
-        return;
-    }
-    console.log(chainReduction(data).length);
-    // result
-    // 9160
-});
+exports.chainReduction = chainReduction;

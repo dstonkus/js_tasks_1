@@ -1,4 +1,6 @@
 "use strict";
+exports.__esModule = true;
+exports.checkSameLetters = void 0;
 var checkSameLetters = function (str, inputOne, inputTwo) {
     var countOne = 0;
     var countTwo = 0;
@@ -12,14 +14,4 @@ var checkSameLetters = function (str, inputOne, inputTwo) {
     else
         return false;
 };
-console.log(checkSameLetters('ddkk', 'd', 'k'));
-console.log(checkSameLetters('dkkdd', 'd', 'k'));
-console.log(checkSameLetters('ddkKm', 'd', 'k'));
-console.log(checkSameLetters('dmm', 'd', 'k'));
-console.log(checkSameLetters('eSss', 'd', 'k'));
-// result
-// true
-// false
-// true
-// false
-// true
+exports.checkSameLetters = checkSameLetters;

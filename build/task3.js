@@ -1,4 +1,6 @@
 "use strict";
+exports.__esModule = true;
+exports.calculateNums = void 0;
 var calculateNums = function () {
     var nums = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -10,6 +12,4 @@ var calculateNums = function () {
     });
     return Math.trunc(Math.sqrt(sum) / 2);
 };
-console.log(calculateNums(65, 60, 75, 55, 60, 63, 64, 45));
-// result
-// 86
+exports.calculateNums = calculateNums;

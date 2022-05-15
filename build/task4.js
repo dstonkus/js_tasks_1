@@ -1,4 +1,6 @@
 "use strict";
+exports.__esModule = true;
+exports.stringWavePattern = void 0;
 var stringWavePattern = function (str) {
     var waveArray = [];
     var strArray = str.split('');
@@ -11,10 +13,4 @@ var stringWavePattern = function (str) {
     });
     return waveArray;
 };
-console.log(stringWavePattern('hello'));
-console.log(stringWavePattern(' h e y '));
-console.log(stringWavePattern(''));
-// result
-// [ 'Hello', 'hEllo', 'heLlo', 'helLo', 'hellO' ]
-// [ ' H e y ', ' h E y ', ' h e Y ' ]
-// []
+exports.stringWavePattern = stringWavePattern;

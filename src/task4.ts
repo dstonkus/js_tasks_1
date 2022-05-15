@@ -1,4 +1,4 @@
-const stringWavePattern = (str: string): string[] => {
+export const stringWavePattern = (str: string): string[] => {
   const waveArray: string[] = [];
   const strArray = str.split('');
 
@@ -14,12 +14,3 @@ const stringWavePattern = (str: string): string[] => {
 
   return waveArray;
 };
-
-console.log(stringWavePattern('hello'));
-console.log(stringWavePattern(' h e y '));
-console.log(stringWavePattern(''));
-
-// result
-// [ 'Hello', 'hEllo', 'heLlo', 'helLo', 'hellO' ]
-// [ ' H e y ', ' h E y ', ' h e Y ' ]
-// []
