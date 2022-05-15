@@ -3,9 +3,10 @@
 # Running
 
 1. Clone repo
-2. yarn install
-3. cd build
-4. node index.js
+2. cd 'folder_name'
+3. yarn install
+4. cd build
+5. node index.js
 
 # Results
 
